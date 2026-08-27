@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aiXamine</title>
+
+  <title>aiXamine.com — Premium Real Estate 😎</title>
 
   <style>
-    html, body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
       height: 100%;
       margin: 0;
     }
@@ -15,17 +22,170 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: clamp(1.5rem, 4vw, 3rem);
-      font-weight: 600;
+      overflow: hidden;
+
+      background:
+        radial-gradient(circle at 20% 20%, #ffef9f 0, transparent 25%),
+        radial-gradient(circle at 80% 30%, #ff9de2 0, transparent 30%),
+        radial-gradient(circle at 50% 90%, #8ee7ff 0, transparent 35%),
+        linear-gradient(135deg, #fff6b7, #f7b6ff, #9ee8ff);
+
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    .card {
       text-align: center;
-      padding: 2rem;
-      box-sizing: border-box;
+      padding: 55px 65px;
+      margin: 24px;
+      max-width: 950px;
+
+      background: rgba(255, 255, 255, 0.8);
+      border: 6px solid #111;
+      border-radius: 30px;
+
+      box-shadow:
+        12px 12px 0 #111,
+        24px 24px 0 rgba(255, 255, 255, 0.5);
+
+      transform: rotate(-1deg);
+    }
+
+    .tiny {
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(2.4rem, 7vw, 6.5rem);
+      line-height: 1.05;
+      font-weight: 900;
+
+      color: #111;
+
+      text-shadow:
+        3px 3px 0 #ffdf00,
+        6px 6px 0 #ff61c7;
+
+      animation: wiggle 3s ease-in-out infinite;
+    }
+
+    .issa {
+      display: inline-block;
+      font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+      font-size: 1.15em;
+      color: #e60073;
+      transform: rotate(2deg);
+    }
+
+    .emoji {
+      display: inline-block;
+      animation: bounce 1.2s infinite;
+    }
+
+    .subtitle {
+      margin: 32px 0 24px;
+      font-family: Georgia, serif;
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      font-style: italic;
+    }
+
+    .buy-button {
+      display: inline-block;
+
+      margin-top: 12px;
+      padding: 18px 32px;
+
+      font-family: "Comic Sans MS", cursive;
+      font-size: 1.15rem;
+      font-weight: 900;
+
+      color: white;
+      background: #111;
+
+      border: 4px solid #111;
+      border-radius: 999px;
+
+      text-decoration: none;
+
+      box-shadow: 6px 6px 0 #ff61c7;
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .buy-button:hover {
+      transform: translate(4px, 4px) rotate(-2deg);
+      box-shadow: 2px 2px 0 #ff61c7;
+    }
+
+    .fine-print {
+      margin-top: 28px;
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      opacity: 0.55;
+    }
+
+    @keyframes wiggle {
+      0%, 100% {
+        transform: rotate(-1deg);
+      }
+
+      50% {
+        transform: rotate(1deg);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(12deg);
+      }
     }
   </style>
 </head>
 
 <body>
-  This nice domain name will cost you money, Issa 😁
+
+  <main class="card">
+
+    <div class="tiny">
+      🚨 Extremely Serious Domain Negotiation 🚨
+    </div>
+
+    <h1>
+      This nice domain name<br>
+      will cost you money,<br>
+      <span class="issa">Issa</span>
+      <span class="emoji">😁</span>
+    </h1>
+
+    <div class="subtitle">
+      Congratulations. You have discovered premium Internet real estate.
+    </div>
+
+    <a
+      class="buy-button"
+      href="mailto:buy@aixamine.com?subject=Fine,%20Yazan.%20How%20much%20for%20aixamine.com%3F&body=Dear%20Domain%20Overlord,%0A%0AI%20would%20like%20to%20discuss%20the%20totally%20reasonable%20price%20of%20aixamine.com.%0A%0ARegards,%0AIssa"
+    >
+      💸 Fine. How much?
+    </a>
+
+    <div class="fine-print">
+      * Friends-and-family discount may or may not exist.<br>
+      * Payment in academic citations will not be accepted.
+    </div>
+
+  </main>
+
 </body>
 </html>
